@@ -1,0 +1,39 @@
+@import url(../../../reseter.css);
+
+.header .container {
+    padding: 0 15px;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.header .container {
+    padding: 0 15px;
+}
+
+.header {
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.header .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header__burger-btn {
+    width: 42px;
+    height: 42px;
+    background-color: #0078DC;
+}
+

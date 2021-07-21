@@ -1,0 +1,19 @@
+@import "./abstracts/vars";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+ body {
+   background-color: #fff;
+   color: #000;
+ }
+
+@import '../../../reseter.css';
+@import "layout/header";
