@@ -1,0 +1,56 @@
+@import "../abstracts/vars";
+
+.main{
+  &__inner{
+    display: grid;
+    grid-template-columns: 15px 1fr 15px;
+    background-color: $secondary;
+    @media (min-width: 414px) {
+      grid-template-columns: 10px 1fr 10px;
+      background-color: #fff;
+    }
+    @media (min-width: 768px) {
+      grid-template-columns: 20px 1fr 180px 20px;
+    }
+  }
+  &__wrap-img{
+    grid-column:1/4;
+    max-width: 550px;
+    overflow: hidden;
+    position: relative;
+    height: 225px;
+    @media (min-width: 414px) {
+      height: 258px;
+    }
+    @media (min-width: 768px) {
+      height: 342px;
+      grid-column: 2/3;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(253, 255, 140, 0.49);
+    }
+  }
+  &__img{
+    object-fit: cover;
+    height: 100%;
+  }
+  &__quotes-wrap{
+    grid-column: 2/3;
+    padding: 20px 0;
+    background-color: #fff;
+    @media (min-width: 768px) {
+      grid-column: 3/4;
+      padding: 0;
+    }
+  }
+  &__quotes{
+    background-color: $primary;
+    height: 320px;
+    @media (min-width: 768px) {
+      height: 100%;
+    }
+  }
+}
